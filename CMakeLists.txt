@@ -40,7 +40,7 @@ target_link_libraries(bfc
 
 # bfrt: the object runtime
 
-add_library(bfrt
+add_library(bfrt SHARED
   libbrainfuck.cpp
   )
 
