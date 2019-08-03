@@ -71,3 +71,12 @@ target_link_libraries(bfdb
 target_compile_definitions(bfdb
   PUBLIC DETAILED=true
   )
+
+# install:
+
+install(
+  TARGETS bf bfc bfi bfdb bfrt
+  RUNTIME DESTINATION bin
+  LIBRARY DESTINATION lib64
+  ARCHIVE DESTINATION lib/bf
+  )
